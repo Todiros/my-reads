@@ -1,38 +1,21 @@
-# MyReads Project
+# My Reads (React Bookshelf App)
+##### *A Udacity FEND Project*
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+## About The Project
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+Bookshelf web application for sorting and storing books build with [React](https://reactjs.org/) and [React Router](https://reacttraining.com/react-router/). Part of Udacity's [Front End Nanodegree](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001) program (Project 7). 
 
-## TL;DR
+## Use
 
-To get started developing right away:
+On the main page you will see three shelves - **Currently Reading**, **Want To Read** and **Read**. You can move books between shelves. 
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+You can also add more books to the shelves by using the '**+**' button on the bottom right. This will lead you to the `/search` page where you can search for a book/s and then add to a shelf via the button in the bottom right corner on each book. 
 
-## What You're Getting
-```bash
-├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
-├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
-├── public
-│   ├── favicon.ico # React Icon, You may change if you wish.
-│   └── index.html # DO NOT MODIFY
-└── src
-    ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
-    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── icons # Helpful images for your app. Use at your discretion.
-    │   ├── add.svg
-    │   ├── arrow-back.svg
-    │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
-```
+## Setup & Installation
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+See the project [HERE](https://todiros.github.io/my-reads/). 
+    
+Alternatively, you can clone this repository and `npm install` and then `npm start` to run it on a local server.  
 
 ## Backend Server
 
@@ -76,11 +59,18 @@ search(query, maxResults)
 * query: `<String>`
 * maxResults: `<Integer>` Due to the nature of the backend server, search results are capped at 20, even if this is set higher.
 * Returns a Promise which resolves to a JSON object containing a collection of book objects.
-* These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
 
-## Important
+## Search Terms
 The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
 
-## Create React App
+## Dependencies 
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+See [`package.json`](https://github.com/Todiros/my-reads/blob/master/package.json)
+
+## Technology
+
+* HTML, CSS, JavaScript (ES6)
+* [React](https://reactjs.org/)
+* [React-Router](https://reacttraining.com/react-router/)
+* [Create React App](https://github.com/facebookincubator/create-react-app) ([React Scripts](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md))
+* [Node.JS](https://nodejs.org/en/) with [NPM](https://www.npmjs.com/)
